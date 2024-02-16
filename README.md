@@ -2,7 +2,9 @@
 how to configure lampp
 
 ## package depencies
+```
 sudo apt install net-tools
+```
 
 ## start lampp
 ```
@@ -41,10 +43,9 @@ edit this file
 ```
 
 ```
-# laravel 8 example
 <VirtualHost 127.0.0.5:80>
     ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "/opt/lampp/htdocs/kl-webapp/public"
+    DocumentRoot "/opt/lampp/htdocs/laravel-folder/public"
     ServerName windows.com
     ErrorLog "logs/windows.com-error_log"
     CustomLog "logs/windows.com-access_log" common
@@ -55,6 +56,5 @@ edit this file
 
 ## laravel error 500
 ```
-php artisan key:generate
 chmod 777 storage/
 ```
